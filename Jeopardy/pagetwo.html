@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <h1>SECOND ROUND</h1>
+    <h2 id="switchPlayers1">Player 1</h2>
+    <div class="div"></div>
+    <div class="hero">
+        <div id="interact-cards" class="container1">
+            <div class="category1">Comedy</div>
+            <div id="comedy100" class="score">100</div>
+            <div id="comedy200" class="score">200</div>
+            <div id="comedy300" class="score">300</div>
+            <div id="comedy400" class="score">400</div>
+            <div id="comedy500" class="score">500</div>
+        </div>
+        <div class="container2"> 
+            <div id="scorewrapped" class="category1">States</div>
+            <div id="states100" class="score">100</div>
+            <div id="states200" class="score">200</div>
+            <div id="states300" class="score">300</div>
+            <div id="states400" class="score">400</div>
+            <div id="states500" class="score">500</div>
+        </div>
+        <div class="container3">
+            <div id="Category" class="category1">Human Body</div>
+            <div id="humanBody100" class="score">100</div>
+            <div id="humanBody200" class="score">200</div>
+            <div id="humanBody300" class="score">300</div>
+            <div id="humanBody400" class="score">400</div>
+            <div id="humanBody500" class="score">500</div>
+        </div>
+        <div class="container4">
+            <div class="category1">History</div>
+            <div id="history100" class="score">100</div>
+            <div id="history200" class="score">200</div>
+            <div id="history300" class="score">300</div>
+            <div id="history400" class="score">400</div>
+            <div id="history500" class="score">500</div>
+        </div>
+        <div class="container5">
+            <div class="category1">Java Script</div>
+            <div id="Java100" class="score">100</div>
+            <div id="Java200" class="score">200</div>
+            <div id="Java300" class="score">300</div>
+            <div id="Java400" class="score">400</div>
+            <div id="Java500" class="score">500</div>
+        </div>
+    </div>
+
+    <div id="error" class="error"></div>
+    <form method="POST" action="/" class="content" id="answer-form">
+        <input id="answer" class="text" placeholder="User Input" />
+        <br>
+        <button type="submit" id="guess-Button" class="btn">Guess</button>
+        <button type="button" id="pass-Button" class="btn" onclick="switchPlayers()">Pass</button>
+        <button type="button" id="Passto1" class="btn" onclick="passingAnswer()">Player 1</button>
+        <p id="player1-score" class="seperating-scores1">Player 1 score</p>
+        <p id="player2-score" class="seperating-scores2">Player 2 score</p>
+        <button type="button" id="next-Round" class="btn" onclick="window.location.href='./Finalround.html'">Next Round</button>
+        <button class="btn" type="button" onclick='clearScore()'>Clear Score</button>
+    </form>
+    
+    <script src="./script2.js"></script>   
+</body>
+<footer>2024 Jeopardy by: Alex</footer>
+</html>
